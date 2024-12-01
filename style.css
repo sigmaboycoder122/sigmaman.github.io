@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Cabin:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+
+}
+
+body {
+  background-color: #535353;
+  font-family: 'Archivo';
+}
+
+.container {
+    padding: 30px 30px;
+    width: 500px;
+    height: auto;
+    background-color: #FCFCFC;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+}
+
+.container p {
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+input::placeholder {
+    font-family: 'Archivo';
+}
+.container input{
+    border: 1px solid black;
+    width: 100%;
+    padding: 10px 20px;
+    height: 40px;
+    border-radius: 5px;
+    outline: none;
+    margin-top: 20px;
+}
+
+.generateBtn {
+    font-family: 'Archivo';
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #a55dfc;
+    color: #fff;
+    cursor: pointer;
+}
+
+#imgBox {
+    width: 100%;        /* Make sure the container is 100% of the parent width */
+    height: auto;       /* Let it grow based on the content */
+    margin-top: 20px;   /* Add some spacing from the button */
+    display: flex;      /* Ensure image can be centered */
+    justify-content: center; /* Center the image inside the container */
+    align-items: center;     /* Align the image vertically */
+    border-radius: 5px;
+}
+
+#qrImage {
+    max-width: 100%;    /* Prevent the image from overflowing */
+    height: auto;       /* Maintain aspect ratio */
+}
